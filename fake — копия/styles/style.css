@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+@keyframes an {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    0% {transform: translateY(-150%);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    0% {transform: translateX(-50%);}
+    100% {transform: translateY(0);}
+}
+@keyframes a {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    0% {transform: translateX(50%);}
+    100% {transform: translateY(0);}
+}
+
+header {
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color: white;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 15px 20px;
+    animation: an 2.6s forwards;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    height: 15px;
+    width: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.first-block {
+    height: 65vh;
+    width: 100%;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url(../assets/Rectangle\ \(1\).png);
+    animation: ani 2.5s forwards;
+}
+.first-block h1 {
+    padding-top: 10%;
+}
+
+
+.second-block {
+    text-align: center;
+    animation: a 2.5s forwards;
+}
+.second-block h1 {
+    padding-top: 6%;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 58px;
+}
+.second-block h5 {
+    color:#A0A0A0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+.third-block {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    gap: 10px;
+    animation: ani 2.5s forwards;
+}
+.third-block img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    background-size: contain;
+}
+.third-left {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+.third-right {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.third-block h2 {
+    margin-top: 15px;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.third-block h4 {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.fourth-block {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    animation: a 2.5s forwards;
+}
+
+.cards {
+    padding: 0px 60px;
+    gap: 30px;
+    display: flex;
+    animation: ani 2.5s forwards;
+}
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    text-align: left;    
+    animation: a 2.7s forwards;
+}
+.card h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #A0A0A0;
+}
+
+.fifth-block {
+    margin-top: 100px;
+    height: 65vh;
+    width: 100%;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url(../assets/Rectangle\ \(8\).png);
+    animation: ani 2.5s forwards;
+}
+.fifth-block h1 {
+    padding-top: 9%;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+.sixth-block {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    animation: a 2.5s forwards;
+}
+.sixth-block img {
+    height:450px;
+    width: 1000px;
+    background-size: contain;
+}
+.sixth-block p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #A0A0A0;
+}
+
+.seventh-block {
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    animation: ani 2.5s forwards;
+}
+.seventh-block img {
+    height:450px;
+    width: 1000px;
+    background-size: contain;
+}
+.seventh-block p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #A0A0A0;
+}
+
+
+.footer-block {
+    display: flex;
+    padding: 8%;
+    height: 55vh;
+    margin: 100px auto;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #9AA8B1;
+    animation: a 2.5s forwards;
+}
+.footer-block img {
+    background-size: contain;
+    width: 40px;
+}
+.footer-block h2 {
+    margin-top: 15px;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.footer-block p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+}
+
+
+.cont-imgs {
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.8vw;
+}
+.cont-imgs img {
+    height: 200px;
+    width: 200px;
+}
